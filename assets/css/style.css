@@ -18,6 +18,25 @@ body {
   */
 }
 
+.custom-details summary {
+  list-style: none;
+}
+
+.custom-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.custom-details summary::before {
+  content: '';
+}
+
+.custom-details:hover {
+  cursor: pointer;
+}
+
+.custom-details[open] {
+  cursor: default;
+}
 @font-face {
   font-family: "CustomFont";
   src: url("fonts/Drugs.otf") format("otf");
